@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title #{pageTitle}
+
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css")
+
+    link(rel="stylesheet", href="/admin/css/style.css")
+
+  body
+    
+    include ../partials/header.pug
+
+    .body
+
+      include ../partials/sider.pug
+
+      .main
+        block main
+
+    script(src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js") 
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js")
+
+    script(src="/tinymce/tinymce.min.js")
+  
+    script(src="https://cdn.tiny.cloud/1/kvj3s0b76oqq8rnuzwuw79ul1332ete3ir3ss4rwpfx1afh9/tinymce/6/tinymce.min.js" referrerpolicy="origin")
+
+    script(src="/admin/js/tinymce-config.js")
+    script(src="/admin/js/script.js")
